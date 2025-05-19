@@ -4,8 +4,7 @@ export const QRCodeGenerator = () => {
   const [number, setNumber] = useState("");
 
   const handleClick = () => {
-    <h1>{number && <Qrcode value={number} />}</h1>
-    
+ 
   };
   return (
     <div>
@@ -17,8 +16,8 @@ export const QRCodeGenerator = () => {
           value={number}
           onChange={(e) => setNumber(e.target.value)}
         />
-        <button onClick={handleClick}>Generator code </button>
-     
+        <button onClick={handleClick}>Generator QRcode </button>
+        <h1>{number && <Qrcode value={number} />}</h1>
       </div>
     </div>
   );
