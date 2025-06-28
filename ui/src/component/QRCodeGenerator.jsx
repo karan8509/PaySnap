@@ -11,7 +11,7 @@ export const QRCodeGenerator = () => {
       <h1>QRCode Generator</h1>
       <div className="container">
         <input
-          type="number"
+          type="text"
           name="number"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
